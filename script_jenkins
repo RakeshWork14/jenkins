@@ -1,0 +1,23 @@
+pipeline{
+    agent{
+        label 'Java-slave'
+    }
+
+    stages {
+        stage ('buildStage'){
+            steps{
+                echo "Hello"
+
+                script{
+                    def course = "Docker"
+                    if(course== "Docker"){
+                        println("Thanks for registering $course")
+                    }else{
+                        println("Good Day!")
+                    }
+                }
+                sleep(10)
+            }
+        }
+    }
+}
