@@ -16,7 +16,7 @@ pipeline{
                         println("Good Day!")
                     }
                 }
-                sleep(10)
+                sleep(100)
             }
         }
     }
