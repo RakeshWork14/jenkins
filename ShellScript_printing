@@ -1,0 +1,14 @@
+pipeline{
+    agent{
+        label 'Java-slave'
+    } 
+
+    stages{
+        stage('ShellStage'){
+            steps{
+                echo "Printing Host Name"
+                sh 'hostname -i'
+            }
+        }
+    }
+}
