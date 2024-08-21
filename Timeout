@@ -4,9 +4,9 @@ pipeline{
     }
 
     stages{
-        stage('timeoutStage'){
+        stage('timeoutStage') {
             timeout(time:1, unit:Minutes){
-                sleep 100
+                sleep 1
             }
         }
     }
