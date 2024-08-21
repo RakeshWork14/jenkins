@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('timeoutStage'){
             steps{
-            timeout(time:1, unit:MINUTES) {
+            timeout(time:1) {
                 sleep 100
             }
             }
