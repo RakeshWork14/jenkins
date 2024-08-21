@@ -1,0 +1,13 @@
+pipeline{
+    agent{
+        label 'Java-slave'
+    }
+
+    stages{
+        stage('timeoutStage'){
+            timeout(time:1, unit:Minutes){
+                sleep 100
+            }
+        }
+    }
+}
